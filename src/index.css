@@ -1,0 +1,13 @@
+.homepage-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+body {
+  background: linear-gradient(180deg, #D9D9D9 0.5%, #FFFFFF 40.5%, #FFFFFF 69.5%, #84EAF9 99.99%, #EBEBEB 100%);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
