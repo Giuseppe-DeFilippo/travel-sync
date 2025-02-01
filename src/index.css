@@ -1,40 +1,50 @@
-.card-img-top {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+body {
+  background-color: #DFFBFF !important;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
 }
 
 .homepage-container {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  /* Spazio tra le card */
   justify-content: center;
-
+  /* Centra le card */
 }
 
 .card {
-  width: 12rem;
+  flex: 1 1 calc(50% - 0.5rem);
+  /* 2 card per riga su schermi piccoli */
+  max-width: calc(50% - 0.5rem);
+  /* Massimo 2 card per riga */
   height: 12rem;
 }
 
-
-body {
-  background: linear-gradient(180deg, #D9D9D9 0.5%, #FFFFFF 40.5%, #FFFFFF 69.5%, #84EAF9 99.99%, #EBEBEB 100%);
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
+/* Stile per schermi più grandi di 375px */
+@media (min-width: 376px) {
+  .card {
+    flex: 1 1 calc(33.333% - 1rem);
+    /* 3 card per riga */
+    max-width: calc(33.333% - 1rem);
+  }
 }
 
-@media (max-width: 409px) {
-  .homepage-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-  }
-
+/* Stile per schermi più grandi di 768px */
+@media (min-width: 768px) {
   .card {
-    width: calc(50% - 0.5rem) !important;
-    height: 12rem !important;
+    flex: 1 1 calc(25% - 1rem);
+    /* 4 card per riga */
+    max-width: calc(25% - 1rem);
+  }
+}
+
+/* Stile per schermi più grandi di 1200px */
+@media (min-width: 1200px) {
+  .card {
+    flex: 1 1 calc(20% - 1rem);
+    /* 5 card per riga */
+    max-width: calc(20% - 1rem);
   }
 }
