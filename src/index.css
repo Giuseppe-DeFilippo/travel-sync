@@ -22,7 +22,7 @@ header {
   box-shadow: -1px 19px 19px -7px rgba(0, 52, 60, 1);
 }
 header img {
-  width: 50%;
+  max-width: 50% !important;
   height: 100%;
   object-fit: cover;
 }
