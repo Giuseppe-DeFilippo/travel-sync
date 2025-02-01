@@ -1,37 +1,24 @@
-import { Link } from "react-router-dom"
+import CardComponent from "../components/CardComponent";
 export default function HomePage() {
-
+    const dataCards = [
+        { img: "/imgHome/fotoviaggio.png", description: "Viaggi" },
+        { img: "/imgHome/immagine2.jpeg", description: "Utenti" },
+        { img: "/imgHome/contattaci.jpeg", description: "Contatti" },
+        { img: "/imgHome/immagine-vuota.png", description: "Extra" },
+        { img: "/imgHome/immagine-vuota.png", description: "Extra" }
+    ];
     return (
+        <div className="container-fluid h-100 p-0">
+            <div className="row g-3 justify-content-center ">
+                {dataCards.map((dataCards, index) => {
+                    return (<div key={index} className="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <CardComponent dataCards={dataCards} />
+                    </div>
+                    )
+                })}
 
-        <div className="homepage-container " >
-            <Link to="/viaggi">
-                <div className="card" style={{ width: "12rem" }}>
-                    <img src="/imgHome/fotoviaggio.png" className="card-img-top" style={{ width: "12rem", height: "12rem" }} alt="immagineViaggio" />
-                    <div className="card-body d-none">
-                        <p className="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div> </Link>
-
-            <Link to="listaUtenti">
-                <div className="card" style={{ width: "12rem", }}>
-                    <img src="/imgHome/immagine2.jpeg" className="card-img-top" style={{ width: "12rem", height: "12rem" }} alt="" />
-                    <div className="card-body d-none">
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div> </Link>
-            <Link to="contactUS">
-                <div className="card" style={{ width: "12rem" }}>
-                    <img src="/imgHome/contattaci.jpeg" className="card-img-top" style={{ width: "12rem", height: "12rem" }} alt="" />
-                    <div className="card-body d-none">
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div></Link>
-            <div className="card" style={{ width: "12rem" }}>
-                <img src="/imgHome/immagine-vuota.png" className="card-img-top" style={{ width: "12rem", height: "12rem" }} alt="" />
-                <div className="card-body d-none">
-                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
             </div>
+
         </div>
     )
 }
