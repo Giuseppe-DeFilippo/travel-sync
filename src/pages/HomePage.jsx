@@ -9,7 +9,7 @@ export default function HomePage() {
     ];
     return (
         <div className="container-fluid h-100 p-0">
-            <div className="row g-3 justify-content-center ">
+            <div className="row g-2 justify-content-center ">
                 {dataCards.map((dataCards, index) => {
                     return (<div key={index} className="col-6 col-sm-4 col-md-3 col-lg-2">
                         <CardComponent dataCards={dataCards} />
