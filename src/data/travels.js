@@ -7,6 +7,7 @@ const travels = [
         companion_name: "Paolo",
         companion_surname: "Cresti",
         id_utente: "1",
+        img: "./imgTravels/parigi.jpg"
     },
     {
         id: 2,
@@ -16,6 +17,7 @@ const travels = [
         companion_name: "Elisa",
         companion_surname: "Berti",
         id_utente: "3",
+        img: "./imgTravels/londra.jpg"
     },
     {
         id: 3,
@@ -25,6 +27,7 @@ const travels = [
         companion_name: "Carlo",
         companion_surname: "Ceruti",
         id_utente: "5",
+        img: "./imgTravels/roma.jpeg"
     },
     {
         id: 4,
@@ -34,6 +37,7 @@ const travels = [
         companion_name: "Leonardo",
         companion_surname: "De Luca",
         id_utente: "4",
+        img: "./imgTravels/berlino.jpg"
     },
     {
         id: 5,
@@ -43,6 +47,7 @@ const travels = [
         companion_name: "Sofia",
         companion_surname: "Gentile",
         id_utente: "2",
+        img: "./imgTravels/zurigo.jpg"
     },
 ];
 
