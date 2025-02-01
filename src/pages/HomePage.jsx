@@ -8,12 +8,13 @@ export default function HomePage() {
         { img: "/imgHome/immagine-vuota.png", description: "Extra" }
     ];
     return (
-        <div className="container-fluid h-100 p-0">
-            <div className="row g-3 justify-content-center ">
+        <div className="container-fluid">
+            <div className="row h-100">
                 {dataCards.map((dataCards, index) => {
-                    return (<div key={index} className="col-6 col-sm-4 col-md-3 col-lg-2">
-                        <CardComponent dataCards={dataCards} />
-                    </div>
+                    return (
+                        <div key={index} className="h-100 pt-2 col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 ">
+                            <CardComponent dataCards={dataCards} />
+                        </div>
                     )
                 })}
 
