@@ -10,12 +10,12 @@ export const UsersPage = () => {
 
                     <div className="w-100 d-flex pt-2" key={user.id}>
                         <div className="containerImg">
-                            <img src="https://placehold.co/50x50" alt="placeholder" />
+                            <img id="imgUser" src={user.img} alt="placeholder" />
                         </div>
                         <div className="contentUsers bg-white w-100 d-flex justify-content-between px-2 align-items-center">
                             <h5>{`${user.name} ${user.surname}`}</h5>
                             <div className="d-flex">
-                                <span className="btn rounded-0 text-bg-secondary">Show Details</span>
+                                <span className="btn rounded-5 text-bg-secondary">Show Details</span>
                             </div>
                         </div>
                     </div >

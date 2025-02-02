@@ -135,3 +135,9 @@ li {
 .contentUsers span {
   background-color: #194b52 !important;
 }
+
+#imgUser {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
