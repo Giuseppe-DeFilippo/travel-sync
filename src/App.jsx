@@ -1,7 +1,6 @@
-import './App.css'
 import { UsersPage } from './pages/UsersPage'
 import HomePage from './pages/HomePage'
-import Layout from './components/Layout'
+import { Layout, Layout2 } from './components/Layout'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 function App() {
     return (
@@ -9,8 +8,10 @@ function App() {
             <Routes>
                 <Route path="/" element={<Layout />}>
                     <Route index element={<HomePage />} />
+                </Route>
+                <Route path="/" element={<Layout2 />}>
                     <Route path="users" element={<UsersPage />} />
-                    <Route path="viaggi" element={<h2>lista utenti</h2>} />
+                    <Route path="viaggi" element={<h2>lista viaggi</h2>} />
                     <Route path="contactUs" element={<h2>contattaci</h2>} />
                 </Route>
             </Routes>

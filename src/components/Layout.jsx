@@ -1,6 +1,7 @@
 import { FooterComponent } from "./FooterComponent";
 import Header from "./Header";
 import { Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Layout = () => {
     return (
@@ -15,4 +16,24 @@ const Layout = () => {
     );
 };
 
-export default Layout;
+const Layout2 = () => {
+    return (
+        <>
+            <div className="headerCustom d-flex flex-column">
+                <header>
+                    <img src="./logo.png" alt="" />
+                    <Link to={"/"} className="fa-solid fa-house px-2 text-dark"></Link>
+                    <i className="fa-solid fa-magnifying-glass"></i>
+                </header>
+            </div>
+            <main className="container-fluid">
+                <Outlet />
+            </main>
+            <FooterComponent />
+
+        </>
+    );
+};
+
+
+export { Layout, Layout2 };
