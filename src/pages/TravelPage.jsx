@@ -1,16 +1,16 @@
 import travels from "../data/travels";
-import CardUser from "../components/CardTravel";
+import CardTravel from "../components/CardTravel";
 
 export default function TravelPage() {
     const travel = [...travels];
 
     return (
-        <main className="container mb-5 mt-2">
+        <main className="container">
             <div className="row gy-4">
                 {travel.length > 0
                     ? travel.map((u) => (
                         <div className="col-12 col-md-6 col-lg-4" key={u.id}>
-                            <CardUser
+                            <CardTravel
                                 img={u.img}
                                 city={u.city}
                                 departure_date={u.departure_date}
