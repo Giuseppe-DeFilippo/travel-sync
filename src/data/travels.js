@@ -6,7 +6,7 @@ const travels = [
         return_date: "15/04/2025",
         companion_name: "Paolo",
         companion_surname: "Cresti",
-        id_utente: "1",
+        utente: "1",
         img: "./imgTravels/parigi.jpg"
     },
     {
@@ -16,7 +16,7 @@ const travels = [
         return_date: "01/07/2025",
         companion_name: "Elisa",
         companion_surname: "Berti",
-        id_utente: "3",
+        utente: "3",
         img: "./imgTravels/londra.jpg"
     },
     {
@@ -26,7 +26,7 @@ const travels = [
         return_date: "15/03/2025",
         companion_name: "Carlo",
         companion_surname: "Ceruti",
-        id_utente: "5",
+        utente: "5",
         img: "./imgTravels/roma.jpeg"
     },
     {
@@ -36,7 +36,7 @@ const travels = [
         return_date: "21/09/2025",
         companion_name: "Leonardo",
         companion_surname: "De Luca",
-        id_utente: "4",
+        utente: "4",
         img: "./imgTravels/berlino.jpg"
     },
     {
@@ -46,8 +46,18 @@ const travels = [
         return_date: "08/08/2025",
         companion_name: "Sofia",
         companion_surname: "Gentile",
-        id_utente: "2",
+        utente: "2",
         img: "./imgTravels/zurigo.jpg"
+    },
+    {
+        id: 6,
+        city: "Madrid",
+        departure_date: "15/10/2025",
+        return_date: "23/10/2025",
+        companion_name: "Dario",
+        companion_surname: "Lampa",
+        utente: "5",
+        img: "./imgTravels/madrid.jpg"
     },
 ];
 
