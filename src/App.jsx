@@ -1,13 +1,14 @@
 import './App.css'
 import { UsersPage } from './pages/UsersPage'
 import HomePage from './pages/HomePage'
+import TravelPage from "./pages/TravelPage"
 import Layout from './components/Layout'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 function App() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Layout />}>
+                <Route path="/" element={<Layout />}>        
                     <Route index element={<HomePage />} />
                     <Route path="users" element={<UsersPage />} />
                     <Route path="viaggi" element={<h2>lista utenti</h2>} />
