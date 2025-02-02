@@ -1,0 +1,6 @@
+.dimImg {
+    width: 70px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
