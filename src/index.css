@@ -22,7 +22,7 @@ header {
   box-shadow: -1px 19px 19px -7px rgba(0, 52, 60, 1);
 }
 header img {
-  max-width: 50% !important;
+  max-width: 70% !important;
   height: 100%;
   object-fit: cover;
 }
@@ -33,6 +33,23 @@ main {
   max-height: calc(100vh - 140px);
   padding: 20px;
   overflow-y: scroll;
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(76, 154, 165, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(76, 154, 165, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(76, 154, 165, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#4c9aa5",GradientType=1);
 }
 ::-webkit-scrollbar {
   display: none;
@@ -42,7 +59,27 @@ main {
 footer {
   min-height: 70px;
   max-height: 70px;
-  background-color: #00343c;
+  background: rgb(0, 52, 60);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(0, 52, 60, 1) 12%,
+    rgba(25, 75, 82, 1) 47%,
+    rgba(97, 171, 182, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(0, 52, 60, 1) 12%,
+    rgba(25, 75, 82, 1) 47%,
+    rgba(97, 171, 182, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(0, 52, 60, 1) 12%,
+    rgba(25, 75, 82, 1) 47%,
+    rgba(97, 171, 182, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00343c",endColorstr="#61abb6",GradientType=1);
+  border-top: 1px solid white;
 }
 footer img {
   height: 20%;
@@ -75,4 +112,16 @@ li {
     justify-content: flex-start;
     padding-left: 10px;
   }
+}
+
+.contentUsers {
+  height: 50px;
+}
+.contentUsers h5 {
+  font-size: 13px;
+  padding-left: 8px;
+  padding-top: 8px;
+}
+.contentUsers span {
+  background-color: #194b52 !important;
 }

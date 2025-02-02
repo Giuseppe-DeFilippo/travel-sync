@@ -5,7 +5,7 @@ export default function CardComponent({ dataCards }) {
     const getRoute = (description) => {
         switch (description) {
             case "Viaggi": return "/viaggi";
-            case "Utenti": return "/listaUtenti";
+            case "Users": return "/users";
             case "Contatti": return "/contactUs"
         }
     }
