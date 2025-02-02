@@ -26,9 +26,7 @@ const Layout2 = () => {
                     <i className="fa-solid fa-magnifying-glass"></i>
                 </header>
             </div>
-            <main className="container-fluid">
-                <Outlet />
-            </main>
+            <Outlet />
             <FooterComponent />
 
         </>

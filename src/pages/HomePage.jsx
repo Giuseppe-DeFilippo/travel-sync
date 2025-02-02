@@ -8,18 +8,13 @@ export default function HomePage() {
         { img: "/imgHome/immagine-vuota.png", description: "Extra" }
     ];
     return (
-
-
         <div className="row">
             {dataCards.map((dataCards, index) => {
                 return (
                     <CardComponent key={index} dataCards={dataCards} />
                 )
             })}
-
         </div>
-
-
     )
 }
 
