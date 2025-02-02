@@ -1,7 +1,7 @@
 import travels from "../data/travels";
 import CardUser from "../components/CardTravel";
 
-export default function UserPage() {
+export default function TravelPage() {
     const travel = [...travels];
 
     return (
