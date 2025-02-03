@@ -1,3 +1,4 @@
+import "../components/AboutUsPage.css"
 export default function AboutUsPage() {
 
     const personaleWeb = [
@@ -10,7 +11,7 @@ export default function AboutUsPage() {
         <main>
             <div className="d-flex justify-content-center ">
                 {personaleWeb.map((persona, index) => {
-                    return <div key={index} className="card ms-5" style={{ width: "18rem" }}>
+                    return <div key={index} className="card ms-5 card-customizzata" style={{ width: "18rem" }}>
                         <img src={persona.image} className="card-img-top bg-secondary" alt="" />
                         <div className="card-body bg-light">
                             <h5 className="card-title">{persona.name} {persona.surname} </h5>
