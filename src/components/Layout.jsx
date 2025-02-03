@@ -24,7 +24,7 @@ const Layout2 = () => {
                     <div className="d-flex align-items-center w-70">
                         <img src="./logo.png" alt="" />
                     </div>
-                    <div class name="d-flex align-items-center w-30">
+                    <div className="d-flex align-items-center">
                         <Link to={"/"} className="fa-solid fa-house px-2 text-dark"></Link>
                         <i className="fa-solid fa-magnifying-glass"></i>
                     </div>  
