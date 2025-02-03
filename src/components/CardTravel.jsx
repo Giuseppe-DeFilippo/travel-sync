@@ -17,8 +17,8 @@ export default function CardUser({
                 <div className={`${style.mybody}`}>
                     <h5 className="m-0">{city}</h5>
                     <div className="d-inline-block">
-                    <p className={`${style.date}`}>{departure_date}</p>
-                    <p className={`${style.date}`}>{return_date}</p>
+                        <p className={`${style.date}`}>{departure_date}</p>
+                        <p className={`${style.date}`}>{return_date}</p>
                     </div>
                     <p className={`${style.companion}`}><small>{companion_name} {companion_surname}</small></p>
                 </div>
