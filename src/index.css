@@ -38,15 +38,21 @@ main {
   padding: 20px;
   overflow-y: scroll;
   background: rgb(255, 255, 255);
-  background: -moz-linear-gradient(180deg,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(76, 154, 165, 1) 100%);
-  background: -webkit-linear-gradient(180deg,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(76, 154, 165, 1) 100%);
-  background: linear-gradient(180deg,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(76, 154, 165, 1) 100%);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(76, 154, 165, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(76, 154, 165, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(76, 154, 165, 1) 100%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#4c9aa5", GradientType=1);
 }
 
@@ -69,18 +75,24 @@ footer {
   min-height: 70px;
   max-height: 70px;
   background: rgb(0, 52, 60);
-  background: -moz-linear-gradient(0deg,
-      rgba(0, 52, 60, 1) 12%,
-      rgba(25, 75, 82, 1) 47%,
-      rgba(97, 171, 182, 1) 100%);
-  background: -webkit-linear-gradient(0deg,
-      rgba(0, 52, 60, 1) 12%,
-      rgba(25, 75, 82, 1) 47%,
-      rgba(97, 171, 182, 1) 100%);
-  background: linear-gradient(0deg,
-      rgba(0, 52, 60, 1) 12%,
-      rgba(25, 75, 82, 1) 47%,
-      rgba(97, 171, 182, 1) 100%);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(0, 52, 60, 1) 12%,
+    rgba(25, 75, 82, 1) 47%,
+    rgba(97, 171, 182, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(0, 52, 60, 1) 12%,
+    rgba(25, 75, 82, 1) 47%,
+    rgba(97, 171, 182, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(0, 52, 60, 1) 12%,
+    rgba(25, 75, 82, 1) 47%,
+    rgba(97, 171, 182, 1) 100%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00343c", endColorstr="#61abb6", GradientType=1);
   border-top: 1px solid white;
 }
@@ -92,8 +104,21 @@ footer img {
 }
 
 .card {
+  position: relative;
+  top: 0;
+  left: 0;
   margin-top: 10px;
   aspect-ratio: 1 / 1;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.active {
+  display: block !important;
+  background-color: rgba(0, 0, 0, 0.664);
+  transition: 1s;
 }
 
 /* ImageButton */
@@ -114,9 +139,6 @@ li {
 }
 
 /* about us page */
-
-
-
 
 /* MEDIA QUERY HEADER */
 @media screen and (min-width: 992px) {
@@ -144,7 +166,6 @@ li {
   width: 50px;
   height: 50px;
   object-fit: cover;
-
 }
 
 @media screen and (min-width: 576px) {
