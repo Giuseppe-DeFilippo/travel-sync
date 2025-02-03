@@ -23,8 +23,7 @@ header {
 }
 header img {
   max-width: 70% !important;
-  height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /* MAIN */

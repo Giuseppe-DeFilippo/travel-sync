@@ -3,7 +3,7 @@
 const Header = () => {
     return (
         <header>
-            <img src="./logo.png" alt="" />
+            <img src="./logo.png" alt="" className="img-fluid" />
         </header>
     );
 };
