@@ -23,8 +23,16 @@ header {
 }
 
 header img {
-  max-width: 70% !important;
+  max-width: 85% !important;
   object-fit: contain;
+}
+
+.w-30 {
+  width: 30% !important;
+}
+
+.w-70 {
+  width: 70% !important;
 }
 
 /* MAIN */
@@ -140,4 +148,11 @@ li {
   width: 50px;
   height: 50px;
   object-fit: cover;
+
+}
+
+@media screen and (min-width: 576px) {
+  header img {
+    width: 385px;
+  }
 }
