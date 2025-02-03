@@ -10,7 +10,7 @@
     left: 0;
     right: 0;
     color: white;
-    background-color: rgba(0, 0, 0, 0.551);
+    background-color: rgba(0, 0, 0, 0.608);
     padding-bottom: 7px;
     padding-left: 0px;
     padding-top: 7px;
@@ -39,8 +39,16 @@
     transition: all 0.5s;
 }
 
-.imgCard:hover {
+.imgCard:active {
     .date, .companion {
         opacity: 1;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .imgCard:hover {
+        .date, .companion {
+            opacity: 1;
+        }
     }
 }
