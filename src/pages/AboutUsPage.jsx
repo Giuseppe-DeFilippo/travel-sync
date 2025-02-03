@@ -1,5 +1,5 @@
 import "../components/AboutUsPage.css"
-export default function () {
+export default function AboutUsPage() {
 
     const personaleWeb = [
         { name: "Francesco", surname: "Cialfi", ruolo: "creare pagine e design", image: "https://cdn.pixabay.com/photo/2018/08/28/12/41/avatar-3637425_1280.png" },
@@ -11,7 +11,7 @@ export default function () {
         <main>
             <div className="d-flex justify-content-center row   " >
                 {personaleWeb.map((persona, index) => (
-                    <div key={index} className="card mt-4 card-customizzata " style={{ width: "18rem" }}>
+                    <div key={index} className="m-0 card mt-4 card-customizzata " style={{ width: "18rem" }}>
                         <img src={persona.image} className="card-img-top bg-secondary" alt="" />
                         <div className="card-body bg-light">
                             <h5 className="card-title">{persona.name} {persona.surname} </h5>
