@@ -1,5 +1,5 @@
-import { FooterComponent } from "./FooterComponent";
-import Header from "./Header";
+import { FooterComponent } from "../FooterComponent";
+import Header from "../Header";
 import { Outlet } from "react-router-dom";
 import { Link } from "react-router-dom";
 
@@ -27,7 +27,7 @@ const Layout2 = () => {
                     <div className="d-flex align-items-center">
                         <Link to={"/"} className="fa-solid fa-house px-2 text-dark"></Link>
                         <i className="fa-solid fa-magnifying-glass"></i>
-                    </div>  
+                    </div>
                 </div>
             </header>
             <Outlet />

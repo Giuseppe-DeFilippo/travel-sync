@@ -2,7 +2,7 @@ import { UsersPage } from './pages/UsersPage'
 import HomePage from './pages/HomePage'
 import TravelPage from './pages/TravelPage'
 import AboutUsPage from './pages/AboutUsPage'
-import { Layout, Layout2 } from './components/Layout'
+import { Layout, Layout2 } from './components/layout/Layout'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
