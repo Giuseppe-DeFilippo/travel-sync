@@ -115,9 +115,9 @@ footer img {
   top: 0;
   left: 0;
 }
-.active {
+.card:hover .overlay {
   display: block !important;
-  background-color: rgba(0, 0, 0, 0.664);
+  background-color: rgba(0, 0, 0, 0.521);
   transition: 1s;
 }
 
