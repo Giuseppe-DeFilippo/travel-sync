@@ -19,16 +19,19 @@ const Layout = () => {
 const Layout2 = () => {
     return (
         <>
-            <div className="headerCustom d-flex flex-column">
-                <header>
-                    <img src="./logo.png" alt="" />
-                    <Link to={"/"} className="fa-solid fa-house px-2 text-dark"></Link>
-                    <i className="fa-solid fa-magnifying-glass"></i>
-                </header>
-            </div>
+            <header>
+                <div className="d-flex justify-content-between align-items-center w-100 px-3">
+                    <div className="d-flex align-items-center w-70">
+                        <img src="./logo.png" alt="" />
+                    </div>
+                    <div class name="d-flex align-items-center w-30">
+                        <Link to={"/"} className="fa-solid fa-house px-2 text-dark"></Link>
+                        <i className="fa-solid fa-magnifying-glass"></i>
+                    </div>  
+                </div>
+            </header>
             <Outlet />
             <FooterComponent />
-
         </>
     );
 };
